@@ -22,7 +22,7 @@ const TripPlanner = () => {
   return (
     <SiteLayout>
       <Helmet>
-        <title>Trip Planner — VoyageWise</title>
+        <title>Trip Planner — Goomantu</title>
         <meta name="description" content="Plan and book hotels, flights, trains, and buses with quick links to top providers." />
         <link rel="canonical" href={window.location.href} />
       </Helmet>

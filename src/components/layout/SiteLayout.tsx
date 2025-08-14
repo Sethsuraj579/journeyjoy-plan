@@ -27,7 +27,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children }) => {
         <nav className="container mx-auto flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2">
             <div className="size-8 rounded-md bg-gradient-primary shadow-glow" aria-hidden />
-            <span className="text-lg font-semibold">VoyageWise</span>
+            <span className="text-lg font-semibold">Goomantu</span>
           </Link>
           <div className="hidden md:flex items-center gap-1">
             <NavItem to="/destinations" label="Destinations" />
@@ -60,7 +60,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children }) => {
           <div>
             <div className="flex items-center gap-2">
               <div className="size-6 rounded bg-gradient-primary shadow-elegant" aria-hidden />
-              <span className="font-semibold">VoyageWise</span>
+              <span className="font-semibold">Goomantu</span>
             </div>
             <p className="text-sm text-muted-foreground mt-2">
               Smart planner, budget tools, and community stories to make your travel effortless.
@@ -83,7 +83,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children }) => {
           </div>
         </div>
         <div className="border-t py-4 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} VoyageWise. All rights reserved.
+          © {new Date().getFullYear()} Goomantu. All rights reserved.
         </div>
       </footer>
     </div>

@@ -16,7 +16,7 @@ const NotFound = () => {
   return (
     <SiteLayout>
       <Helmet>
-        <title>404 — Page Not Found | VoyageWise</title>
+        <title>404 — Page Not Found | Goomantu</title>
         <meta name="description" content="The page you’re looking for doesn’t exist." />
         <link rel="canonical" href={window.location.href} />
       </Helmet>

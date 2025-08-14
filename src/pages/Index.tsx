@@ -14,7 +14,7 @@ const Index = () => {
   return (
     <SiteLayout>
       <Helmet>
-        <title>VoyageWise — Smart Travel Planner & Budget Trips</title>
+        <title>Goomantu — Smart Travel Planner & Budget Trips</title>
         <meta name="description" content="Plan smarter trips with budget tools, destination guides, and a friendly travel community." />
         <link rel="canonical" href={window.location.href} />
       </Helmet>

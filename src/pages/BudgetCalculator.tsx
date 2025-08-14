@@ -33,7 +33,7 @@ const BudgetCalculator = () => {
   return (
     <SiteLayout>
       <Helmet>
-        <title>Travel Budget Calculator — VoyageWise</title>
+        <title>Travel Budget Calculator — Goomantu</title>
         <meta name="description" content="Estimate total trip costs including flights, accommodation, daily spend and contingency." />
         <link rel="canonical" href={window.location.href} />
       </Helmet>

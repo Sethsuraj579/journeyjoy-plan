@@ -29,7 +29,7 @@ const Destinations = () => {
   return (
     <SiteLayout>
       <Helmet>
-        <title>Top Destinations — VoyageWise</title>
+        <title>Top Destinations — Goomantu</title>
         <meta name="description" content="Discover top travel destinations with best seasons, average daily budgets, and tips." />
         <link rel="canonical" href={window.location.href} />
       </Helmet>

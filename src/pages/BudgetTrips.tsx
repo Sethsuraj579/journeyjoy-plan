@@ -26,7 +26,7 @@ const BudgetTrips = () => {
   return (
     <SiteLayout>
       <Helmet>
-        <title>Budget Trips — VoyageWise</title>
+        <title>Budget Trips — Goomantu</title>
         <meta name="description" content="Curated budget-friendly itineraries to inspire your next trip." />
         <link rel="canonical" href={window.location.href} />
       </Helmet>

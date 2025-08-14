@@ -9,7 +9,7 @@ import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 
 interface BlogPost { id: string; title: string; destination?: string; content: string; createdAt: number; }
-const STORAGE_KEY = "voyagewise_blogs";
+const STORAGE_KEY = "goomantu_blogs";
 
 const useBlogs = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
@@ -46,7 +46,7 @@ const Community = () => {
   return (
     <SiteLayout>
       <Helmet>
-        <title>Community — Stories, Blogs & Travel Tips | VoyageWise</title>
+        <title>Community — Stories, Blogs & Travel Tips | Goomantu</title>
         <meta name="description" content="Read travel stories, write your own blog, and explore practical tips from the community." />
         <link rel="canonical" href={window.location.href} />
       </Helmet>
