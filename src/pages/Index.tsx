@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Helmet } from "react-helmet-async";
 import heroImg from "@/assets/hero-travel.jpg";
-import destParis from "@/assets/dest-paris.jpg";
-import destBali from "@/assets/dest-bali.jpg";
-import destTokyo from "@/assets/dest-tokyo.jpg";
-import destNyc from "@/assets/dest-nyc.jpg";
+import destGoa from "@/assets/dest-goa.jpg";
+import destAgra from "@/assets/dest-agra.jpg";
+import destKerala from "@/assets/dest-kerala.jpg";
+import destJaipur from "@/assets/dest-jaipur.jpg";
 import { Link } from "react-router-dom";
 import { Calculator, Map, PiggyBank, BookOpenText } from "lucide-react";
 
@@ -63,10 +63,10 @@ const Index = () => {
         </div>
         <div className="grid gap-6 md:grid-cols-4">
           {[
-            { name: "Paris, France", img: destParis, alt: "Paris with Eiffel Tower at golden hour" },
-            { name: "Bali, Indonesia", img: destBali, alt: "Bali rice terraces and ocean" },
-            { name: "Tokyo, Japan", img: destTokyo, alt: "Tokyo neon streets at dusk" },
-            { name: "New York, USA", img: destNyc, alt: "New York skyline with sunset" },
+            { name: "Goa, India", img: destGoa, alt: "Beautiful Goa beaches with palm trees at sunset" },
+            { name: "Agra, India", img: destAgra, alt: "Majestic Taj Mahal at golden hour" },
+            { name: "Kerala, India", img: destKerala, alt: "Serene Kerala backwaters with traditional houseboat" },
+            { name: "Jaipur, India", img: destJaipur, alt: "Vibrant pink city streets with traditional architecture" },
           ].map((d) => (
             <Card key={d.name} className="overflow-hidden group">
               <img src={d.img} alt={d.alt} className="h-40 w-full object-cover group-hover:scale-[1.02] transition-transform" loading="lazy" />

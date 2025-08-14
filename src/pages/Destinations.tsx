@@ -1,16 +1,16 @@
 import SiteLayout from "@/components/layout/SiteLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Helmet } from "react-helmet-async";
-import destParis from "@/assets/dest-paris.jpg";
-import destBali from "@/assets/dest-bali.jpg";
-import destTokyo from "@/assets/dest-tokyo.jpg";
-import destNyc from "@/assets/dest-nyc.jpg";
+import destGoa from "@/assets/dest-goa.jpg";
+import destAgra from "@/assets/dest-agra.jpg";
+import destKerala from "@/assets/dest-kerala.jpg";
+import destJaipur from "@/assets/dest-jaipur.jpg";
 
 const destinations = [
-  { name: "Paris, France", img: destParis, alt: "Paris with Eiffel Tower at golden hour", best: "Apr–Jun, Sep–Oct", daily: 95 },
-  { name: "Bali, Indonesia", img: destBali, alt: "Bali rice terraces and ocean", best: "May–Sep", daily: 45 },
-  { name: "Tokyo, Japan", img: destTokyo, alt: "Tokyo neon streets at dusk", best: "Mar–May, Oct–Nov", daily: 85 },
-  { name: "New York, USA", img: destNyc, alt: "New York skyline with sunset", best: "Apr–Jun, Sep–Nov", daily: 110 },
+  { name: "Goa, India", img: destGoa, alt: "Beautiful Goa beaches with palm trees at sunset", best: "Nov–Mar", daily: 35 },
+  { name: "Agra, India", img: destAgra, alt: "Majestic Taj Mahal at golden hour", best: "Oct–Mar", daily: 30 },
+  { name: "Kerala, India", img: destKerala, alt: "Serene Kerala backwaters with traditional houseboat", best: "Oct–Mar", daily: 40 },
+  { name: "Jaipur, India", img: destJaipur, alt: "Vibrant pink city streets with traditional architecture", best: "Oct–Mar", daily: 25 },
 ];
 
 const Destinations = () => {
@@ -22,7 +22,7 @@ const Destinations = () => {
         <link rel="canonical" href={window.location.href} />
       </Helmet>
       <section className="container mx-auto py-12">
-        <h1 className="text-3xl font-bold mb-6">Destinations to Visit</h1>
+        <h1 className="text-3xl font-bold mb-6">Incredible India Destinations</h1>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {destinations.map((d) => (
             <Card key={d.name} className="overflow-hidden hover:shadow-elegant transition-shadow">
