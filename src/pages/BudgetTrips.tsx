@@ -6,19 +6,34 @@ import { Link } from "react-router-dom";
 
 const trips = [
   {
-    title: "Bangkok on $50/day (4 days)",
-    summary: "Street food, temples, and river cruise.",
-    cost: "$200 + flights",
+    title: "Kerala Backwaters (5 days)",
+    summary: "Houseboat stay, spice gardens, and temple visits.",
+    cost: "₹15,000 + transport",
   },
   {
-    title: "Lisbon lite (3 days)",
-    summary: "Trams, viewpoints, and pastel de nata crawl.",
-    cost: "$180 + flights",
+    title: "Rajasthan Heritage (7 days)",
+    summary: "Forts, palaces, desert safari in Jaisalmer.",
+    cost: "₹18,000 + transport",
   },
   {
-    title: "Bali chill (5 days)",
-    summary: "Ubud rice terraces, beaches, and waterfall day.",
-    cost: "$350 + flights",
+    title: "Goa Beach Retreat (4 days)",
+    summary: "Beaches, Portuguese churches, and seafood.",
+    cost: "₹12,000 + transport",
+  },
+  {
+    title: "Himachal Hills (6 days)",
+    summary: "Manali valleys, Rohtang Pass, and mountain views.",
+    cost: "₹16,000 + transport",
+  },
+  {
+    title: "Golden Triangle (5 days)",
+    summary: "Delhi, Agra Taj Mahal, and Jaipur Pink City.",
+    cost: "₹14,000 + transport",
+  },
+  {
+    title: "Spiritual Varanasi (3 days)",
+    summary: "Ganges aarti, ancient temples, and boat rides.",
+    cost: "₹8,000 + transport",
   },
 ];
 
@@ -27,12 +42,12 @@ const BudgetTrips = () => {
     <SiteLayout>
       <Helmet>
         <title>Budget Trips — Goomantu</title>
-        <meta name="description" content="Curated budget-friendly itineraries to inspire your next trip." />
+        <meta name="description" content="Curated budget-friendly India travel itineraries with costs in Indian Rupees." />
         <link rel="canonical" href={window.location.href} />
       </Helmet>
       <section className="container mx-auto py-12">
-        <h1 className="text-3xl font-bold mb-6">Budget Trip Ideas</h1>
-        <div className="grid gap-6 md:grid-cols-3">
+        <h1 className="text-3xl font-bold mb-6">Budget India Travel Ideas</h1>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {trips.map((t) => (
             <Card key={t.title} className="hover:shadow-elegant transition-shadow">
               <CardHeader>
