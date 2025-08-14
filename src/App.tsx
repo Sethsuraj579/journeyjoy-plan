@@ -11,6 +11,7 @@ import BudgetTrips from "./pages/BudgetTrips";
 import BudgetCalculator from "./pages/BudgetCalculator";
 import TripPlanner from "./pages/TripPlanner";
 import Community from "./pages/Community";
+import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/calculator" element={<BudgetCalculator />} />
             <Route path="/planner" element={<TripPlanner />} />
             <Route path="/community" element={<Community />} />
+            <Route path="/auth" element={<Auth />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

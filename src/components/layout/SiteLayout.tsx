@@ -1,7 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Plane, Calculator, Map, Users } from "lucide-react";
+import { Plane, Calculator, Map, Users, LogOut, User } from "lucide-react";
 import React from "react";
+import { useAuth } from "@/hooks/useAuth";
 
 interface SiteLayoutProps {
   children: React.ReactNode;
@@ -21,6 +22,8 @@ const NavItem = ({ to, label }: { to: string; label: string }) => (
 );
 
 const SiteLayout: React.FC<SiteLayoutProps> = ({ children }) => {
+  const { user, signOut, loading } = useAuth();
+
   return (
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-30 border-b bg-background/80 backdrop-blur">
@@ -37,6 +40,33 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children }) => {
             <NavItem to="/community" label="Community" />
           </div>
           <div className="flex items-center gap-2">
+            {!loading && (
+              <>
+                {user ? (
+                  <>
+                    <span className="text-sm text-muted-foreground hidden md:inline">
+                      Welcome, {user.email}
+                    </span>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={signOut}
+                      className="gap-2"
+                    >
+                      <LogOut className="h-4 w-4" />
+                      <span className="hidden md:inline">Sign Out</span>
+                    </Button>
+                  </>
+                ) : (
+                  <Link to="/auth">
+                    <Button variant="outline" className="gap-2">
+                      <User className="h-4 w-4" />
+                      <span className="hidden md:inline">Sign In</span>
+                    </Button>
+                  </Link>
+                )}
+              </>
+            )}
             <Link to="/planner">
               <Button variant="hero" className="hidden md:inline-flex">
                 <Plane className="opacity-90" /> Plan a Trip

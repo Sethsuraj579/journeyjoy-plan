@@ -8,9 +8,12 @@ import destAgra from "@/assets/dest-agra.jpg";
 import destKerala from "@/assets/dest-kerala.jpg";
 import destJaipur from "@/assets/dest-jaipur.jpg";
 import { Link } from "react-router-dom";
-import { Calculator, Map, PiggyBank, BookOpenText } from "lucide-react";
+import { Calculator, Map, PiggyBank, BookOpenText, User } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
 
 const Index = () => {
+  const { user } = useAuth();
+
   return (
     <SiteLayout>
       <Helmet>
@@ -30,6 +33,9 @@ const Index = () => {
             <div className="mt-5 flex flex-wrap gap-3">
               <Link to="/planner"><Button variant="hero"><Map /> Start Planning</Button></Link>
               <Link to="/calculator"><Button variant="outline"><Calculator /> Budget Calculator</Button></Link>
+              {!user && (
+                <Link to="/auth"><Button variant="secondary"><User /> Sign Up Free</Button></Link>
+              )}
             </div>
           </div>
         </div>
