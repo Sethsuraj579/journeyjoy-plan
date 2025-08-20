@@ -62,9 +62,9 @@ const Community = () => {
 
           <TabsContent value="stories" className="mt-6 grid gap-6 md:grid-cols-2">
             {[{
-              title: "Solo in Kyoto", excerpt: "I wandered through bamboo groves at dawn and sipped matcha by the river…"
+              title: "Solo in Kerala", excerpt: "I wandered through bamboo groves at dawn and sipped matcha by the river…"
             },{
-              title: "Sicily road trip", excerpt: "From Palermo markets to Mt Etna—here’s how we did it for under $70/day."
+              title: "Simla road trip", excerpt: "From  markets to Mt Etna—here’s how we did it for under ₹700/day."
             }].map((s) => (
               <Card key={s.title} className="hover:shadow-elegant transition-shadow">
                 <CardHeader>
