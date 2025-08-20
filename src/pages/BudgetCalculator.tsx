@@ -6,7 +6,11 @@ import { Slider } from "@/components/ui/slider";
 import { Helmet } from "react-helmet-async";
 import { useMemo, useState } from "react";
 
-const currency = (n: number) => `$${n.toFixed(0)}`;
+const currency = (n: number) => new Intl.NumberFormat('en-IN',{
+     style:'currency',
+     currency:'INR',
+     minimumFractionDigits: 0,
+}).format(n);
 
 const BudgetCalculator = () => {
   const [days, setDays] = useState(5);
